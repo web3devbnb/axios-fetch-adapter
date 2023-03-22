@@ -2,7 +2,9 @@ import axios from 'axios';
 import settle from 'axios/lib/core/settle';
 import buildURL from 'axios/lib/helpers/buildURL';
 import buildFullPath from 'axios/lib/core/buildFullPath';
-import { isUndefined, isStandardBrowserEnv, isFormData } from 'axios/lib/utils';
+import utils from 'axios/lib/utils';
+
+const { isUndefined, isStandardBrowserEnv, isFormData } = utils;
 
 /**
  * - Create a request object
