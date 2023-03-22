@@ -76,7 +76,7 @@ async function getResponse(request, config) {
             case 'formData':
                 response.data = await stageOne.formData();
                 break;
-            case 'stream'
+            case 'stream':
                 response.data = stageOne;
                 break;
             default:
