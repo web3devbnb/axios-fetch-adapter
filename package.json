@@ -32,5 +32,6 @@
     },
     "peerDependencies": {
         "axios": ">=0.26.0"
-    }
+    },
+    "type": "module"
 }
