@@ -1,8 +1,8 @@
-import axios from 'axios';
-import settle from 'axios/lib/core/settle';
-import buildURL from 'axios/lib/helpers/buildURL';
-import buildFullPath from 'axios/lib/core/buildFullPath';
-import utils from 'axios/lib/utils';
+const axios = require('axios');
+const settle = require('axios/lib/core/settle');
+const buildURL = require('axios/lib/helpers/buildURL');
+const buildFullPath = require('axios/lib/core/buildFullPath');
+const utils = require('axios/lib/utils');
 
 const { isUndefined, isStandardBrowserEnv, isFormData } = utils;
 

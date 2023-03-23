@@ -1,5 +1,5 @@
-import axios from 'axios';
-import fetchAdapter from '..';
+const axios = require('axios');
+const fetchAdapter = require('..');
 
 window.axios = axios
 window.onload = async function () {
