@@ -2,9 +2,14 @@ const axios = require('axios');
 const settle = require('axios/lib/core/settle');
 const buildURL = require('axios/lib/helpers/buildURL');
 const buildFullPath = require('axios/lib/core/buildFullPath');
-const utils = require('axios/lib/utils');
-
-const { isUndefined, isStandardBrowserEnv, isFormData } = utils;
+let { isUndefined, isStandardBrowserEnv, isFormData } = require('axios/lib/utils');
+if (!isUndefined) {
+    // Operating in a browser environment
+    const utils = require('axios/lib/utils');
+    isUndefined,
+    isStandardBrowserEnv,
+    isFormData = utils.isUndefined, utils.isStandardBrowserEnv, utils.isFormData;
+}
 
 /**
  * - Create a request object
