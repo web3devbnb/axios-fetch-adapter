@@ -32,5 +32,8 @@
     },
     "peerDependencies": {
         "axios": ">=0.26.0"
+    },
+    "dependencies": {
+        "@vespaiach/axios-fetch-adapter": "^0.3.1"
     }
 }
